@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+  font-size: 30px;
+  background-color: orange;
+  height: 100px;
+  width: 250px;
+  margin: 50px auto;
+  padding: 30px;
+}
+
+
+button{
+  height:30px;
+  font-size: 20px;
+  border: 1px solid rgb(223, 20, 20);
+  background-color: rgb(196, 13, 110);
+  color: black;
+  margin: 3px;
+  font-weight: 700;
+}
