@@ -1,0 +1,25 @@
+.cart {
+
+    width: 350px;
+    background-color: #0ad0e2;
+    padding: 20px 0;
+  }
+  .user-data > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px 15px;
+  }
+  .user-data{
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  
+  }
+  
+  .cart-top-heading {
+    display: flex;
+    margin: 5px;
+    justify-content: space-between;
+  }
