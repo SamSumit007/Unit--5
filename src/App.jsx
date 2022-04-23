@@ -1,17 +1,25 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
-import {Navbar} from "./components/Navbar"
-import {Card} from "./components/Card"
+import { Sidebar } from "./components/Sidebar";
+import {Cart} from "./components/Cart"
+import "./styles/common.css"
+import { Togglemode } from "./components/Togglemode";
+import {ToggleContext} from "./contexts/Toggle"
+import { useContext } from 'react';
+
+
+// className={Toggle?  `common-width light-mode`:`common-width dark-mode`}
 function App() {
-  const [count, setCount] = useState(0)
+  const {Toggle}=useContext(ToggleContext)
+
 
   return (
-    <div className="App">
-   <Navbar/>
-   <Card/>
+    <div className={Toggle? "container-dark-mode":""}>
+      <Sidebar />
+      <div style={{paddingTop:"50px"}}>
+      <Togglemode />
+     <Cart />
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

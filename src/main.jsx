@@ -1,20 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
-import './index.css'
-import {CartContextProvider} from "./Contexts/CartContext"
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import { ToggleContextProvider } from './contexts/Toggle';
+
 ReactDOM.render(
   <React.StrictMode>
-    <CartContextProvider>
+    <ToggleContextProvider>
     <App />
-    </CartContextProvider>
+    </ToggleContextProvider>
   </React.StrictMode>,
-  
-  document.getElementById('root'))
-;
-
-
-
+   document.getElementById('root')
+);
 
 // import React from 'react'
 // import ReactDOM from 'react-dom'
